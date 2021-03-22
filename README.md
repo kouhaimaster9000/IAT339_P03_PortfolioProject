@@ -1,2 +1,4 @@
-# IAT339_P03_PortfolioProject
-Spring 2021
+# IAT339 - P03:PortfolioProject
+Crystal Wei
+Spring2021 
+Section D201
