@@ -231,6 +231,14 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   text-align: center;
 }
 
+.nav-side label, #hamburger {
+  display: none;
+}
+
+.navitems {
+  display: block;
+}
+
 /* Styling social media icons
 */
 .fa {
@@ -242,4 +250,38 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 .fa:hover, .fa:focus, .fa:active{
   color: rgb(47, 165, 177);
+}
+
+/** MEDIA QUERIE
+**/
+@media screen and (max-width: 50rem) {
+  .nav-side{
+    display:block;
+    height: auto;
+    width: 100%;
+  }
+
+  .nav-side label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    padding: 1.25rem;
+  }
+  .navitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 0.1rem solid rgb(47, 165, 177);
+  }
+  /**
+  Toggles the hamburger icon in mobile view
+  **/
+  .navitems {
+    display: none;
+    float: none;
+  }
+  .nav-side input:checked~.navitems {
+    display: block;
+    float: none;
+  }
 }
