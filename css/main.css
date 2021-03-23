@@ -28,6 +28,12 @@ p {
   font-family: 'Lato';
 }
 
+img {
+  width: 100%;
+  max-width: fit-content;
+  height: auto;
+}
+
 .borders{
   text-align: center;
   color: rgb(254, 209, 175);
@@ -101,6 +107,34 @@ COLOURS
 }
 
 /*IMAGE AS A LINK*/
+
+.img-overlay{
+  position: relative;
+  height:fit-content;
+  width: fit-content;
+}
+
+.img-text{
+  background: rgb(47, 165, 177);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: -1rem;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+
+
+.img-overlay:hover .img-text{
+  visibility: visible;
+  opacity: 75%;
+}
 
 a>.img-overlay:hover, a>.img-overlay:active, a>img-overlay:focus {
   opacity: 0.5;
