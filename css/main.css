@@ -188,6 +188,10 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   color: rgb(254, 209, 175);
 }
 
+.nav-side .social{
+  text-align: center;
+}
+
 .nav-side a{
   display: block;
   text-align: center;
