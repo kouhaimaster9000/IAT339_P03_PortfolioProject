@@ -9,10 +9,11 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<body>
+<body class = "padding">
 
   <header>
     <h1>P03: Portfolio Project</h1>
@@ -42,6 +43,8 @@
 
     <section class="element">
       <h3>In-text link</h3>
+      <h4>Rendered Code</h4>
+      <p>This is an <a class = "intext" href="#">in-text link.</a></p>
     </section>
 
 
@@ -51,13 +54,13 @@
       <h3>Navigation Link</h3>
 
       <h4>CSS selector:</h4>
-      <p>.button-nav</p>
+      <p>.navbutton</p>
 
       <h4>Sample code:</h4>
-      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="navbutton"&gt;Default Button&lt;/a&gt;</code>
 
       <h4>Rendered element:</h4>
-      <a class="button-nav" href="#">Default Button</a>
+      <a class="navbutton" href="#">Default Button</a>
 
     </section>
 
@@ -66,21 +69,28 @@
       <h3>Submit/Reset Buttons</h3>
     </section>
 
-
-    <section class="element">
-      <h3>Text Input Field with Label</h3>
-    </section>
-
-
-    <section class="element">
-      <h3>Radio Button with Label</h3>
-    </section>
-
-
     <section class="element">
       <h3>Image as a Link</h3>
+      <h4>CSS selector:</h4>
+      <p>.img-overlay</p>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a href = "#"&gt;
+          &lt;img alt = "placeholder img overlay" class = "img-overlay" alt="image as a link" src="img/imglink.png"&gt;
+        &lt;/a&gt;
+      </code>
+      <h4>Rendered element:</h4>
+      <a href="#">
+        <img class="img-overlay" alt="Example of an Image as a Link" src="img/imglink.png">
+      </a>
     </section>
 
+    <section class="element">
+      <h3>Social Media Button</h3>
+      <i class ="fa fa-youtube-play fa-3x"></i>
+      <i class="fa fa-twitter-square fa-3x"></i>
+      <i class ="fa fa-envelope fa-3x"></i>
+    </section>
 
   </section>
   <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -119,6 +129,41 @@
 
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
+
+  <section id="ethos">
+    <h2>Ethos</h2>
+
+    <section class="element">
+      <h3>Colours</h3>
+      <div id="darkblue"></div>
+      <div id="mediumblue"></div>
+      <div id="lightblue"></div>
+      <div id="mediumorange"></div>
+      <div id="light"></div>
+    </section>
+
+    <section class="element">
+      <h3>Bio</h3>
+      <h2>Designer and Illustrator</h2>
+      <p>Vancouver-based visual designer and illustrator who loves creating new experiences for people through art.</p>
+    </section>
+
+    <section class="element">
+      <h3>About Me</h3>
+      <p>Hello! My name is Crystal and I am a third year student who is studying Interactive Arts and Technology at
+        Simon Fraser University! My strengths lie in illustration, design, and a little bit of coding. My goal is to be
+        able to create beautiful designs that are touching to people, to create a new experience for them. Throughout my
+        education, I have collaborated and worked with many people in projects that includes collaborative writing, web
+        design, film and game design. Outside of design work, I enjoy video games, making stories, reading, and learning
+        new languages. I hope to be able to inspire many people, as well as to inspire myself through new experiences!
+      </p>
+    </section>
+
+    <section class="element">
+      <h3>Process Analysis 1</h3>
+      <h2>Visual Novel: A Sign Never Seen</h2>
+    </section>
+  </section>
 
 </body>
 
