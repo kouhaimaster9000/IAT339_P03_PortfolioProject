@@ -16,6 +16,8 @@ body {
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 code {
@@ -93,6 +95,7 @@ COLOURS
 
 .navbutton {
   display: inline-block;
+  font-family: 'Montserrat', sans-serif;
   padding: 0.75rem;
   color: rgb(252, 241, 219);
   background-color: rgb(0, 85, 122);
@@ -104,6 +107,38 @@ COLOURS
 .navbutton:hover, .navbutton:focus, .navbutton:active {
   text-decoration: underline;
   font-weight: bold;
+}
+
+.submitreset {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: white;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: rgb(47, 165, 177);
+}
+
+.submitreset:hover, .submitreset:active {
+  background-color: rgb(204, 228, 236);
+  color: rgb(47, 165, 177);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.submitreset:focus {
+  font-weight: bold;
+}
+
+/*INPUT*/
+
+input {
+  border: 0.1rem solid rgb(47, 165, 177);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: white;
 }
 
 /*IMAGE AS A LINK*/
@@ -194,6 +229,12 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   box-sizing: border-box;
 }
 
+.bullet {
+  list-style-type: '✦';
+  padding-inline-start: 1ch;
+  color: rgb(47, 165, 177);
+}
+
 /* 
   COMBINED ELEMENTS -------------------
 */
@@ -211,6 +252,8 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 .nav-side .name{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2rem;
   font-size: 2em;
   font-weight: bold;
   padding: 0.75rem;
