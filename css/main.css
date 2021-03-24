@@ -281,6 +281,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   font-weight: bold;
   color: rgb(252, 241, 219);
   text-decoration: none;
+  text-align: center;
   display: none;
 }
 
@@ -366,8 +367,10 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 .gallery{
   box-sizing: border-box;
-  margin: auto;
+  font-family: 'Montserrat', sans-serif;
   margin-left: 23%;
+  margin-right: 2rem;
+  margin-top: 5rem;
   max-width: 1000px;
 }
 
@@ -380,42 +383,35 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin: 1rem -1.2rem;
 }
 
-/* Add padding BETWEEN each column 
-.row,
-.row > .column {
-  padding: 1rem;
-} */
-
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
 }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Content */
 .content {
-  background-color: white;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+.content img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60rem){
   .column {
     width: 100%;
+  }
+
+  .gallery{
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -460,15 +456,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   }
 
   .nav-side .name-mobile{
-    display: block;
-  }
-
-  .nav-side .bio-mobile{
-    text-align: center;
-    color: rgb(254, 209, 175);
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    display: block;
+    display: inline-block;
   }
 
   /**
