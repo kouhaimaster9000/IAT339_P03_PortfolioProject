@@ -387,6 +387,27 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-top: 0.2rem;
 }
 
+.about{
+  background-color: rgb(47, 165, 177);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.about .text{
+  color:rgb(10, 47, 81);
+}
+
+.works{
+  background-color: rgb(47, 165, 177);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+/*Portfolio Gallery*/
 .gallery {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
