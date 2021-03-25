@@ -2,47 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal Wei - IAT339 P03: Portfolio Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Wei - IAT339 P03: Portfolio Project</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
-<body id = "lightblue">
-    <nav class="nav-side">
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger" />
-        <div class="navitems">
-            <a class="name" href=#>Crystal Wei</a>
-            <p class="borders">✦✦✦✦✦✦✦✦✦✦</p>
-            <a class="navbutton" href="#">About Me</a>
-            <a class="navbutton" href="#">Portfolio Works</a>
-            <a class="navbutton" href="#">Personal Works</a>
-            <a class="navbutton" href="#">Contact</a>
-            <div class="social">
-                <i class="fa fa-youtube-play fa-2x"></i>
-                <i class="fa fa-twitter-square fa-2x"></i>
-                <i class="fa fa-envelope fa-2x"></i>
-            </div>
-        </div>
-    </nav>
-  </header>
+<body class="bg margin">
+  <nav class="nav-side">
+    <label for=" hamburger">&#9776;</label>
+    <!--FOR MOBILE VIEW NAME AND BIO-->
+    <a class="name-mobile" href=#>Crystal Wei</a>
+    <div class="bio-mobile">
+      <h4>Designer and Illustrator</h4>
+      <p>Vancouver-based visual designer and illustrator who loves creating new experiences for people through
+        art.</p>
+    </div>
+    <input type="checkbox" id="hamburger" />
+    <!--FOR DESKTOP VIEW NAME AND BIO-->
+    <div class="navitems">
+      <a class="name" href=#>Crystal Wei</a>
+      <div class="bio">
+        <h4>Designer and Illustrator</h4>
+        <p>Vancouver-based visual designer and illustrator who loves creating new experiences for people through
+          art.</p>
+      </div>
+      <p class="borders">✦✦✦✦✦✦✦✦✦✦</p>
+      <a class="navbutton" href="#">About Me</a>
+      <a class="navbutton" href="#">Portfolio Works</a>
+      <a class="navbutton" href="#">Personal Works</a>
+      <a class="navbutton" href="#">Contact</a>
+      <div class="social">
+        <i class="fa fa-youtube-play fa-2x"></i>
+        <i class="fa fa-twitter-square fa-2x"></i>
+        <i class="fa fa-envelope fa-2x"></i>
+      </div>
+      <a class="footer" href="https://github.com/kouhaimaster9000/IAT339_P03_PortfolioProject">Git Respository</a>
+      <a class="footer" href="styleguide.html">Styleguide</a>
+      <a class="footer" href="citations.html">Citations</a>
+    </div>
+  </nav>
 
-  <section>
-    <h3>Hello!</h3>
+  <section class="contact">
+    <h3>Contact</h3>
+    <p>If you have any further inquires, please leave a message and I will get back to you soon!</p>
     <form method="POST">
-      <div class="contact">
+      <div>
         <label for="form-name">Name:</label>
         <input id="form-name">
         <label for="form-email">Email address:</label>
@@ -53,14 +69,6 @@
       <button class="submitreset">Submit</button>
     </form>
   </section>
-
-  <footer class="footer">
-    <h4>Copyright 2021 @ IAT339 D201 - Crystal Wei |
-      <a href="https://github.com/kouhaimaster9000/IAT339_P03_PortfolioProject">Git Respository</a> |
-      <a href="styleguide.html">Styleguide</a> |
-      <a href="citations.html">Citations</a>
-    </h4>
-  </footer>
 </body>
 
 </html>

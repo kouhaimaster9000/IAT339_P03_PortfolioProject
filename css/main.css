@@ -36,7 +36,7 @@ img {
   height: auto;
 }
 
-.borders{
+.borders {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -47,7 +47,7 @@ img {
 COLOURS
 */
 
-#darkestblue{
+#darkestblue {
   background-color: rgb(10, 47, 81);
   padding: 1rem;
   width: 50%;
@@ -85,7 +85,7 @@ COLOURS
 
 /*GENERAL PAGE CSS*/
 
-.bg{
+.bg {
   background-color: rgb(0, 85, 122);
   margin-bottom: 0rem;
   margin-left: 0;
@@ -93,7 +93,7 @@ COLOURS
   margin-top: 0;
 }
 
-.margin{
+.margin {
   margin-left: 23%;
 }
 
@@ -140,7 +140,7 @@ COLOURS
   color: white;
   border-radius: 0.2rem;
   border: none;
-  background-color: rgb(47, 165, 177);
+  background-color: rgb(0, 85, 122);
 }
 
 .submitreset:hover, .submitreset:active {
@@ -165,13 +165,13 @@ input {
 
 /*IMAGE AS A LINK*/
 
-.img-overlay{
+.img-overlay {
   position: relative;
-  height:fit-content;
+  height: fit-content;
   width: fit-content;
 }
 
-.img-text{
+.img-text {
   background: rgb(47, 165, 177);
   color: white;
   position: absolute;
@@ -186,9 +186,7 @@ input {
   transition: opacity .2s, visibility .2s;
 }
 
-
-
-.img-overlay:hover .img-text{
+.img-overlay:hover .img-text {
   visibility: visible;
   opacity: 75%;
 }
@@ -202,21 +200,21 @@ a>.img-overlay:hover, a>.img-overlay:active, a>img-overlay:focus {
   TEXT ELEMENTS -------------------
 */
 
-h1{
+h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
-h2{
+h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h3{
+h3 {
   font-family: 'Helvetica', sans-serif;
   font-weight: bold;
 }
 
-h4{
+h4 {
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -261,19 +259,20 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   COMBINED ELEMENTS -------------------
 */
 
-.nav-side{
+.nav-side {
   padding: 0.5rem;
   height: 100%;
   width: 20%;
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background-color: rgb(10, 47, 81);
 }
 
-.nav-side .name{ /*Displays Name on desktop*/
+.nav-side .name {
+  /*Displays Name on desktop*/
   font-family: 'Montserrat', sans-serif;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -284,7 +283,8 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   text-decoration: none;
 }
 
-.nav-side .name-mobile{ /*Name on mobile*/
+.nav-side .name-mobile {
+  /*Name on mobile*/
   font-family: 'Montserrat', sans-serif;
   font-size: 1.75em;
   margin-top: 0.5rem;
@@ -295,15 +295,15 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   display: none;
 }
 
-.nav-side .name:hover{
+.nav-side .name:hover {
   color: rgb(254, 209, 175);
 }
 
-.nav-side .social{
+.nav-side .social {
   text-align: center;
 }
 
-.nav-side a{
+.nav-side a {
   display: block;
   text-align: center;
 }
@@ -316,7 +316,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   display: block;
 }
 
-.nav-side .footer{
+.nav-side .footer {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   vertical-align: bottom;
@@ -326,23 +326,23 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   text-decoration: none;
 }
 
-.nav-side .footer:hover{
+.nav-side .footer:hover {
   text-decoration: underline;
   color: rgb(254, 209, 175);
 }
 
-.bio{
+.bio {
   text-align: center;
   color: rgb(254, 209, 175);
   margin-right: 0.5rem;
   margin-left: 0.5rem;
 }
 
-.bio p{
+.bio p {
   font-size: 0.8rem;
 }
 
-.bio-mobile{
+.bio-mobile {
   text-align: center;
   color: rgb(254, 209, 175);
   margin-right: 0.5rem;
@@ -351,7 +351,20 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 /*Contact form*/
-.contact input{
+
+.contact {
+  background-color: rgb(47, 165, 177);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.contact h3, .contact p {
+  color: rgb(10, 47, 81);
+}
+
+.contact input {
   font-family: 'Lato', sans-serif;
   display: block;
   border-radius: 0.3rem;
@@ -359,7 +372,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-bottom: 0.5rem;
 }
 
-.contact textarea{
+.contact textarea {
   width: 90%;
   height: 10rem;
   margin-bottom: 2rem;
@@ -368,14 +381,13 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   padding: 0.5rem;
 }
 
-.contact label{
+.contact label {
   display: block;
   margin-bottom: 0.2rem;
   margin-top: 0.2rem;
 }
 
-
-.gallery{
+.gallery {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   margin-left: 23%;
@@ -394,12 +406,14 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 /* Create four equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 50%;
 }
 
 /* Content */
+
 .content {
   padding: 0.5rem;
   margin-right: 0.5rem;
@@ -408,19 +422,19 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   color: rgb(254, 209, 175)
 }
 
-.content img{
+.content img {
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 60rem){
+
+@media screen and (max-width: 60rem) {
   .column {
     width: 100%;
   }
-
-  .gallery{
+  .gallery {
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -428,6 +442,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 /* Styling social media icons
 */
+
 .fa {
   margin: 0.5rem;
   text-decoration: none;
@@ -435,19 +450,19 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   color: rgb(254, 209, 175);
 }
 
-.fa:hover, .fa:focus, .fa:active{
+.fa:hover, .fa:focus, .fa:active {
   color: rgb(47, 165, 177);
 }
 
 /** MEDIA QUERIE
 **/
+
 @media screen and (max-width: 60rem) {
-  .nav-side{
-    display:block;
+  .nav-side {
+    display: block;
     height: auto;
     width: 100%;
   }
-
   .nav-side label {
     display: inline-block;
     color: white;
@@ -460,16 +475,13 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     width: 100%;
     border-top: 0.1rem solid rgb(47, 165, 177);
   }
-
   /*Hides name, bio and star border in mobile drop down*/
-  .bio, .nav-side .name, .nav-side .borders{ 
+  .bio, .nav-side .name, .nav-side .borders {
     display: none;
   }
-
-  .nav-side .name-mobile{
+  .nav-side .name-mobile {
     display: inline-block;
   }
-
   /**
   Toggles the hamburger icon in mobile view
   **/
@@ -482,10 +494,17 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     float: none;
   }
 
-  .contact input{
-    width:100%;
+  .contact{
+    margin-top: 7rem;
   }
-  .contact textarea{
-    width: 100%;
+  .contact input {
+    width: 90%;
+  }
+  .contact textarea {
+    width: 90%;
+  }
+  .margin {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
