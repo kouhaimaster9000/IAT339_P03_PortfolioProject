@@ -48,6 +48,12 @@ img {
   margin-left: 5rem;
 }
 
+.title {
+  text-align: center;
+  font-size: 1.75em;
+  color: rgb(10, 47, 81);
+}
+
 /*
 COLOURS
 */
@@ -334,14 +340,27 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 /*Contact form*/
 
 .contact {
-  background-color: rgb(47, 165, 177);
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
   margin-right: 1rem;
 }
 
-.contact h3, .contact p {
+.contact .info{
+  display: flex;
+}
+
+.contact .left-side {
+  float: left;
+  flex: 10 1 50%;
+}
+
+.contact .right-side {
+  float: right;
+  flex: 10 1 50%;
+}
+
+.contact h2, .contact p {
   color: rgb(10, 47, 81);
 }
 
@@ -354,7 +373,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 .contact textarea {
-  width: 90%;
+  width: 80%;
   height: 10rem;
   margin-bottom: 2rem;
   border: 0.1rem solid rgb(47, 165, 177);
@@ -374,15 +393,9 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-right: 1rem;
 }
 
-.about .title {
-  text-align: center;
-  font-size: 1.75em;
-  color: rgb(10, 47, 81);
-}
-
 .about .info{
-  margin-right: 12rem;
-  margin-left: 12rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
   display: flex;
 }
 
@@ -506,20 +519,22 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     display: block;
     float: none;
   }
-  .contact {
-    margin-top: 7rem;
-  }
   .contact input {
-    width: 90%;
+    width: 100%;
   }
   .contact textarea {
-    width: 90%;
+    width: 100%;
   }
   .margin {
     margin-left: 2rem;
     margin-right: 2rem;
   }
   .about .info {
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .contact .info {
     flex-direction: column;
     margin-right: 2rem;
     margin-left: 2rem;
