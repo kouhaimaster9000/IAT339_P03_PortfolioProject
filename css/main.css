@@ -290,18 +290,33 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 .footer {
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
-  vertical-align: bottom;
-  color: rgb(47, 165, 177);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  background-color: rgb(10, 47, 81);
+  color:rgb(47, 165, 177);
+}
+
+.footer .text{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color:rgb(47, 165, 177); 
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   text-decoration: none;
 }
 
-.footer:hover {
+.footer a{
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color:rgb(254, 209, 175);
+  text-decoration: none;
+}
+
+.footer a:hover {
   text-decoration: underline;
-  color: rgb(254, 209, 175);
+  font-weight: bold;
+  color:rgb(47, 165, 177); 
 }
 
 .bio {
