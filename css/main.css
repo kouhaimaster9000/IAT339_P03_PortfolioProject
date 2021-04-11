@@ -119,8 +119,9 @@ COLOURS
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   padding: 0.75rem;
-  color: rgb(252, 241, 219);
-  background-color: rgb(10, 47, 81);
+  margin: 0;
+  background-color: white;
+  color: rgb(10, 47, 81);
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -128,7 +129,7 @@ COLOURS
 
 .navbutton:hover, .navbutton:focus, .navbutton:active {
   font-weight: bold;
-  background-color: rgb(47, 165, 177);
+  border-bottom: rgb(47, 165, 177) solid 0.2rem; 
 }
 
 .submitreset {
@@ -259,56 +260,26 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   COMBINED ELEMENTS -------------------
 */
 
-.nav-side {
+.navbar {
   padding: 0.5rem;
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  position: relative;
   overflow-x: hidden;
-  background-color: rgb(10, 47, 81);
-}
-
-.nav-side .name {
-  /*Displays Name on desktop*/
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 2em;
-  font-weight: bold;
-  padding: 0.75rem;
-  color: rgb(252, 241, 219);
-  text-decoration: none;
-}
-
-.nav-side .name-mobile {
-  /*Name on mobile*/
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.75em;
-  margin-top: 0.5rem;
-  font-weight: bold;
-  color: rgb(252, 241, 219);
-  text-decoration: none;
+  margin: 0 auto;
   text-align: center;
-  display: none;
+  border-top: rgb(10, 47, 81) 0.15rem solid;
+  border-bottom: rgb(10, 47, 81) 0.15rem solid;
+  background-color: white;
 }
 
-.nav-side .name:hover {
-  color: rgb(254, 209, 175);
+.navbar .center{
+  display: inline-block;
 }
 
-.nav-side .social {
+.navbar a {
   text-align: center;
 }
 
-.nav-side a {
-  display: block;
-  text-align: center;
-}
-
-.nav-side label, #hamburger {
+.navbar label, #hamburger {
   display: none;
 }
 
@@ -316,7 +287,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   display: block;
 }
 
-.nav-side .footer {
+.footer {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   vertical-align: bottom;
@@ -326,7 +297,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   text-decoration: none;
 }
 
-.nav-side .footer:hover {
+.footer:hover {
   text-decoration: underline;
   color: rgb(254, 209, 175);
 }
@@ -340,14 +311,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 .bio p {
   font-size: 0.8rem;
-}
-
-.bio-mobile {
-  text-align: center;
-  color: rgb(254, 209, 175);
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  display: none;
 }
 
 /*Contact form*/
@@ -387,7 +350,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-top: 0.2rem;
 }
 
-.about{
+.about {
   background-color: rgb(47, 165, 177);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -395,11 +358,11 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-right: 1rem;
 }
 
-.about .text{
-  color:rgb(10, 47, 81);
+.about .text {
+  color: rgb(10, 47, 81);
 }
 
-.works{
+.works {
   background-color: rgb(47, 165, 177);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -408,6 +371,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 /*Portfolio Gallery*/
+
 .gallery {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -479,12 +443,12 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 **/
 
 @media screen and (max-width: 60rem) {
-  .nav-side {
+  .navbar {
     display: block;
     height: auto;
     width: 100%;
   }
-  .nav-side label {
+  .navbar label {
     display: inline-block;
     color: white;
     font-style: normal;
@@ -497,10 +461,10 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     border-top: 0.1rem solid rgb(47, 165, 177);
   }
   /*Hides name, bio and star border in mobile drop down*/
-  .bio, .nav-side .name, .nav-side .borders {
+  .bio, .navbar .name, .navbar .borders {
     display: none;
   }
-  .nav-side .name-mobile {
+  .navbar .name-mobile {
     display: inline-block;
   }
   /**
@@ -510,12 +474,11 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     display: none;
     float: none;
   }
-  .nav-side input:checked~.navitems {
+  .navbar input:checked~.navitems {
     display: block;
     float: none;
   }
-
-  .contact{
+  .contact {
     margin-top: 7rem;
   }
   .contact input {
