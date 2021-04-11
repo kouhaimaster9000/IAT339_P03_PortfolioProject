@@ -43,6 +43,11 @@ img {
   color: rgb(254, 209, 175);
 }
 
+.margin{
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
 /*
 COLOURS
 */
@@ -91,10 +96,6 @@ COLOURS
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-}
-
-.margin {
-  margin-left: 23%;
 }
 
 /* 
@@ -368,22 +369,44 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 .about {
-  background-color: rgb(47, 165, 177);
   border-radius: 0.5rem;
   padding: 1rem;
-  margin-top: 1rem;
   margin-right: 1rem;
 }
 
-.about .text {
+.about .title {
+  text-align: center;
+  font-size: 1.75em;
   color: rgb(10, 47, 81);
+}
+
+.about .info{
+  margin-right: 12rem;
+  margin-left: 12rem;
+  display: flex;
+}
+
+.about .left-side {
+  float: left;
+  margin-right: 2rem;
+  flex: 10 1 40%;
+}
+
+.about .right-side {
+  float: right;
+  margin-right: 2rem;
+  flex: 10 1 55%;
+}
+
+.socials {
+  text-align: center;
 }
 
 .works {
   background-color: rgb(47, 165, 177);
   border-radius: 0.5rem;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-right: 1rem;
 }
 
@@ -392,15 +415,9 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .gallery {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 23%;
   margin-right: 2rem;
   margin-top: 5rem;
   max-width: auto;
-}
-
-.gallery h1 {
-  font-size: 50px;
-  word-break: break-all;
 }
 
 .row {
@@ -501,5 +518,10 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   .margin {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .about .info {
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
