@@ -86,7 +86,7 @@ COLOURS
 /*GENERAL PAGE CSS*/
 
 .bg {
-  background-color: rgb(0, 85, 122);
+  background-color: white;
   margin-bottom: 0rem;
   margin-left: 0;
   margin-right: 0;
@@ -261,10 +261,12 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 */
 
 .navbar {
+  margin-top: 3rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
   padding: 0.5rem;
   position: relative;
   overflow-x: hidden;
-  margin: 0 auto;
   text-align: center;
   border-top: rgb(10, 47, 81) 0.15rem solid;
   border-bottom: rgb(10, 47, 81) 0.15rem solid;
@@ -446,11 +448,13 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   .navbar {
     display: block;
     height: auto;
+    margin: 0;
     width: 100%;
+    border-top: none;
   }
   .navbar label {
     display: inline-block;
-    color: white;
+    color:  rgb(10, 47, 81);
     font-style: normal;
     padding: 1.25rem;
   }
@@ -458,14 +462,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 0.1rem solid rgb(47, 165, 177);
-  }
-  /*Hides name, bio and star border in mobile drop down*/
-  .bio, .navbar .name, .navbar .borders {
-    display: none;
-  }
-  .navbar .name-mobile {
-    display: inline-block;
   }
   /**
   Toggles the hamburger icon in mobile view
