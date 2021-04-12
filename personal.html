@@ -17,6 +17,9 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
 
+  <!--JAVASCRIPT-->
+  <script src="scripts/gallery.js"></script>
+
 </head>
 
 <body class="bg margin">
@@ -34,6 +37,72 @@
       </div>
     </div>
   </nav>
+
+  <section class="personal margin">
+    <h2 class="title">Personal Works</h2>
+    <p>A gallery of my previous illustrations that I have done in my free time.</p>
+    <div class="modular-gallery">
+      <div class="row">
+        <div class="col">
+          <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="slides">
+            <img src="https://via.placeholder.com/250x250" alt="about me image">
+          </div>
+
+          <div class="slides">
+            <img src="https://via.placeholder.com/250x250" alt="about me image">
+          </div>
+
+          <div class="slides">
+            <img src="https://via.placeholder.com/250x250" alt="about me image">
+          </div>
+
+          <div class="slides">
+            <img src="https://via.placeholder.com/250x250" alt="about me image">
+          </div>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="col">
+            <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(1)" alt="Nature">
+          </div>
+
+          <div class="col">
+            <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(2)" alt="Nature2">
+          </div>
+
+          <div class="col">
+            <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(3)" alt="Nature3">
+          </div>
+
+          <div class="col">
+            <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(4)" alt="Nature4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="text">Copyright 2021 @ IAT339 D201 : Crystal Wei |

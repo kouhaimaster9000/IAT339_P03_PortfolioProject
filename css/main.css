@@ -43,7 +43,7 @@ img {
   color: rgb(254, 209, 175);
 }
 
-.margin{
+.margin {
   margin-right: 5rem;
   margin-left: 5rem;
 }
@@ -136,7 +136,7 @@ COLOURS
 
 .navbutton:hover, .navbutton:focus, .navbutton:active {
   font-weight: bold;
-  border-bottom: rgb(47, 165, 177) solid 0.2rem; 
+  border-bottom: rgb(47, 165, 177) solid 0.2rem;
 }
 
 .submitreset {
@@ -280,7 +280,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   background-color: white;
 }
 
-.navbar .center{
+.navbar .center {
   display: inline-block;
 }
 
@@ -303,30 +303,30 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: white;
-  color:rgb(10, 47, 81);
+  color: rgb(10, 47, 81);
   text-align: center;
   border-top: rgb(10, 47, 81) 0.15rem solid;
 }
 
-.footer .text{
+.footer .text {
   color: rgb(10, 47, 81);
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   text-decoration: none;
 }
 
-.footer a{
+.footer a {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   font-weight: bold;
-  color:rgb(10, 47, 81);
+  color: rgb(10, 47, 81);
   text-decoration: none;
 }
 
 .footer a:hover {
   text-decoration: underline;
   font-weight: bold;
-  color:rgb(47, 165, 177); 
+  color: rgb(47, 165, 177);
 }
 
 .bio {
@@ -348,7 +348,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-top: 1rem;
 }
 
-.contact .info{
+.contact .info {
   display: flex;
 }
 
@@ -398,7 +398,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-right: 1rem;
 }
 
-.about .info{
+.about .info {
   margin-right: 5rem;
   margin-left: 5rem;
   display: flex;
@@ -419,52 +419,90 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   text-align: center;
 }
 
-.works {
-  background-color: rgb(47, 165, 177);
-  border-radius: 0.5rem;
+.personal {
   padding: 1rem;
-  margin-top: 0.5rem;
-  margin-right: 1rem;
-}
-
-/*Portfolio Gallery*/
-
-.gallery {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  margin-right: 2rem;
-  margin-top: 5rem;
-  max-width: auto;
-}
-
-.row {
-  margin: 1rem -1.2rem;
-}
-
-/* Create four equal columns that floats next to each other */
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Content */
-
-.content {
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-  text-align: center;
-  color: rgb(254, 209, 175)
-}
-
-.content img {
-  display: block;
-  margin: 0 auto;
   margin-top: 1rem;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+.modular-gallery {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.modular-gallery .row>.col {
+  padding: 0.5rem;
+}
+
+/* Create four equal columns that floats next to eachother */
+
+.modular-gallery .col {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+}
+
+.modular-gallery .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 8rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modular-gallery .modal-content {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.modular-gallery .close {
+  position: absolute;
+  color: white;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.modular-gallery .close:hover, .modular-gallery .close:focus {
+  color: rgb(47, 165, 177);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modular-gallery .slides {
+  display: none;
+}
+
+.modular-gallery .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.modular-gallery img.demo {
+  opacity: 0.6;
+}
+
+.modular-gallery .active, .modular-gallery .demo:hover {
+  opacity: 1;
+}
+
+.modular-gallery img.hover-shadow {
+  transition: 0.3s;
+}
+
+.modular-gallery .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 @media screen and (max-width: 60rem) {
   .column {
@@ -503,7 +541,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   }
   .navbar label {
     display: inline-block;
-    color:  rgb(10, 47, 81);
+    color: rgb(10, 47, 81);
     font-style: normal;
     padding: 1.25rem;
   }
@@ -542,5 +580,9 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     flex-direction: column;
     margin-right: 2rem;
     margin-left: 2rem;
+  }
+
+  .modular-gallery .col{
+    width: 100%;
   }
 }

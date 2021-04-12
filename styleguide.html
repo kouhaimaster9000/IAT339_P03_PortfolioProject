@@ -249,44 +249,6 @@
     </section>
 
     <section class="element">
-      <h3>Gallery Image</h3>
-      <div class="img-overlay">
-        <a href="#">
-          <img class="img-overlay" alt="Example of an Image as a Link" src="img/imglink.png">
-          <p class="img-text">NAME OF PROJECT HERE</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="element">
-      <h3>Portfolio Gallery View</h3>
-      <div class="gallery">
-        <h2>Projects</h2>
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <a href="#">
-                <img class="img-overlay" src="https://via.placeholder.com/450x350" alt="Mountains"
-                  style="width:100%"></a>
-              <h3>Visual Novel: A Sight Never Seen</h3>
-              <p>Project Description</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <a href="#">
-                <img class="img-overlay" src="https://via.placeholder.com/450x350" alt="Mountains"
-                  style="width:100%"></a>
-              <h3>Interactive Game: Cafe Sarasa</h3>
-              <p>Project Description</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="element">
       <h3>Contact Form</h3>
       <form method="POST">
         <div class="contact">
@@ -299,6 +261,73 @@
         </div>
         <button class="submitreset">Submit</button>
       </form>
+    </section>
+
+    <section class="element">
+      <h3>Personal Gallery [Modular Lightbox]</h3>
+
+      <div class="modular-gallery">
+        <div class="row">
+          <div class="col">
+            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="col">
+            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="col">
+            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="col">
+            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="slides">
+              <img src="https://via.placeholder.com/250x250" alt="about me image">
+            </div>
+
+            <div class="slides">
+              <img src="https://via.placeholder.com/250x250" alt="about me image">
+            </div>
+
+            <div class="slides">
+              <img src="https://via.placeholder.com/250x250" alt="about me image">
+            </div>
+
+            <div class="slides">
+              <img src="https://via.placeholder.com/250x250" alt="about me image">
+            </div>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="col">
+              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="col">
+              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(2)" alt="Nature2">
+            </div>
+
+            <div class="col">
+              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(3)" alt="Nature3">
+            </div>
+
+            <div class="col">
+              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(4)" alt="Nature4">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </section>
@@ -347,6 +376,9 @@
           href="https://docs.google.com/document/d/1HmgYXReQoHfDQqZmPgneMOQYDWpZVJ7mN5O0c4ktGB8/edit?usp=sharing">here</a>
       </p>
     </section>
+
+    <!--JAVASCRIPT-->
+    <script src="scripts/gallery.js"></script>
 
 </body>
 
