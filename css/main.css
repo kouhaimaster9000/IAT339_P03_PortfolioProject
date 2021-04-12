@@ -54,6 +54,13 @@ img {
   color: rgb(10, 47, 81);
 }
 
+.subtitle {
+  text-align: center;
+  font-size: 1.25em;
+  color: rgb(47, 165, 177);
+  margin-top: 0.2rem;
+}
+
 /*
 COLOURS
 */
