@@ -393,6 +393,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .about .left-side {
   margin-right: 2rem;
   flex: 10 1 40%;
+  text-align: center;
 }
 
 .about .right-side {
