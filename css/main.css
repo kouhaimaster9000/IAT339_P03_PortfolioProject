@@ -627,6 +627,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     display: inline-block;
     color: rgb(10, 47, 81);
     font-style: normal;
+    font-size: 1.25em;
     padding: 1.25rem;
   }
   .navitems a {
@@ -650,6 +651,10 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   }
   .contact textarea {
     width: 100%;
+  }
+  .footer {
+    margin-right: 0;
+    margin-left: 0;
   }
   .margin {
     margin-left: 2rem;
