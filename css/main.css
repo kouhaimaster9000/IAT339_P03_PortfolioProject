@@ -511,7 +511,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-top: 2rem;
 }
 
-.modular-gallery img.demo {
+.modular-gallery img .demo {
   opacity: 0.6;
 }
 
@@ -519,15 +519,11 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   opacity: 1;
 }
 
-.modular-gallery img.hover-shadow {
+.modular-gallery img:hover {
   transition: 0.3s;
-}
-
-.modular-gallery .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
-
-
 
 @media screen and (max-width: 60rem) {
   .column {
