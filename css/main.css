@@ -256,7 +256,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .bullet {
   list-style-type: '✦';
   padding-inline-start: 1ch;
-  color: rgb(47, 165, 177);
 }
 
 /* 
@@ -324,21 +323,49 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   font-weight: bold;
   color: rgb(47, 165, 177);
 }
-
-.bio {
-  text-align: center;
-  color: rgb(254, 209, 175);
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-}
-
-.bio p {
-  font-size: 0.8rem;
-}
-
 .info{
   display: flex;
 }
+
+.index{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.index .header-container{
+  position: relative;
+  text-align: center;
+}
+
+.index #header-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.index #header-img{
+  opacity: 70%;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+.index #name{
+  font-size: 3em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: rgb(10, 47, 81);
+}
+
+.index .text{
+  color: rgb(0, 85, 122);
+}
+
 
 /*Contact form*/
 
