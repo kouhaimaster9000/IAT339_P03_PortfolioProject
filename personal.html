@@ -41,22 +41,22 @@
     <div class="modular-gallery">
       <div class="row">
         <div class="col">
-          <img src="img/akdoc-icon.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          <img class = "img-overlay" src="img/akdoc-icon.png" onclick="openSlides();currentSlide(1)" class="hover-shadow">
         </div>
         <div class="col">
-          <img src="img/astesia-icon.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          <img class = "img-overlay" src="img/astesia-icon.png" onclick="openSlides();currentSlide(2)" class="hover-shadow">
         </div>
         <div class="col">
-          <img src="img/haruka-icon.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          <img class = "img-overlay" src="img/haruka-icon.png" onclick="openSlides();currentSlide(3)" class="hover-shadow">
         </div>
         <div class="col">
-          <img src="img/myrtle-icon.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          <img class = "img-overlay" src="img/myrtle-icon.png" onclick="openSlides();currentSlide(4)" class="hover-shadow">
         </div>
       </div>
 
       <!-- The Modal/Lightbox -->
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div id="modalgallery" class="modal">
+        <span class="close cursor" onclick="closeSlides()">&times;</span>
         <div class="modal-content">
 
           <div class="slides">
@@ -82,19 +82,19 @@
 
           <!-- Thumbnail image controls -->
           <div class="col">
-            <img class="demo" src="img/akdoc-thumb.png" onclick="currentSlide(1)" alt="Drawing of my original character and two characters from the game Arknights to commemorate Arknights Global 1st anniversary (Dec 2020)">
+            <img class="slidethumb" src="img/akdoc-thumb.png" onclick="currentSlide(1)" alt="Drawing of my original character and two characters from the game Arknights to commemorate Arknights Global 1st anniversary (Dec 2020)">
           </div>
 
           <div class="col">
-            <img class="demo" src="img/astesia-thumb.png" onclick="currentSlide(2)" alt="Fanart of Astesia from Arknights (May 2020)">
+            <img class="slidethumb" src="img/astesia-thumb.png" onclick="currentSlide(2)" alt="Fanart of Astesia from Arknights (May 2020)">
           </div>
 
           <div class="col">
-            <img class="demo" src="img/haruka-thumb.png" onclick="currentSlide(3)" alt="Original Character (Mar 2020)">
+            <img class="slidethumb" src="img/haruka-thumb.png" onclick="currentSlide(3)" alt="Original Character (Mar 2020)">
           </div>
 
           <div class="col">
-            <img class="demo" src="img/myrtle-thumb.png" onclick="currentSlide(4)" alt="Fanart of Myrtle from Arknights (June 2020)">
+            <img class="slidethumb" src="img/myrtle-thumb.png" onclick="currentSlide(4)" alt="Fanart of Myrtle from Arknights (June 2020)">
           </div>
         </div>
       </div>

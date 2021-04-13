@@ -1,40 +1,38 @@
-// Open the Modal
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
+function openSlides() {
+    document.getElementById("modalgallery").style.display = "block";
+  }
+
+  function closeSlides() {
+    document.getElementById("modalgallery").style.display = "none";
   }
   
-  // Close the Modal
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
+  var index = 1;
+  showSlides(index);
   
   // Next/previous controls
   function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(index += n);
   }
   
   // Thumbnail image controls
   function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(index = n);
   }
   
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    var thumb = document.getElementsByClassName("slidethumb");
+    var caption = document.getElementById("caption");
+    if (n > slides.length) {index = 1}
+    if (n < 1) {index = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < thumb.length; i++) {
+      thumb[i].className = thumb[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    slides[index-1].style.display = "block";
+    thumb[index-1].className += " active";
+    caption.innerHTML = thumb[index-1].alt;
   }
