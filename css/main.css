@@ -549,13 +549,13 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 
 .tab-gallery{
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
 .tab-gallery .col {
   display: inline-block;
-  width: 10%;
+  width: 15%;
 }
 
 .tab-gallery .col img {
@@ -663,5 +663,13 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   .project-info .text{
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .tab-gallery{
+    text-align: center;
+  }
+  .tab-gallery .col {
+    display: inline-block;
+    width: 30%;
   }
 }
