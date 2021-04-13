@@ -412,12 +412,26 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 .project{
-  padding: 1rem;
+  padding: 0.2rem;
   margin-top: 1rem;
 }
 
 .project img{
   margin-top: 2rem;
+  width: 100%;
+  max-width: fit-content;
+  height: auto;
+}
+
+.project a{
+  text-decoration: none;
+  color: rgb(10, 47, 81);
+}
+
+.project a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .project .info {
@@ -593,12 +607,18 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   }
   .about .info {
     flex-direction: column;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   .contact .info {
     flex-direction: column;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .project .info {
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
