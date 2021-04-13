@@ -547,19 +547,61 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 
-@media screen and (max-width: 60rem) {
-  .column {
-    width: 100%;
-  }
-  .gallery {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+
+.tab-gallery{
+  margin-top: 1rem;
 }
+
+.tab-gallery .col {
+  display: inline-block;
+  width: 10%;
+}
+
+.tab-gallery .col img {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.tab-gallery .col img:hover {
+  opacity: 100%;
+}
+
+.tab-gallery .row:after {
+  content: "";
+  clear: both;
+}
+
+.tab-gallery .expand {
+  position: relative;
+  display: none;
+}
+
+.tab-gallery #imgtext {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-weight: bold;
+  color: rgb(10, 47, 81);
+}
+
+.tab-gallery .close {
+  position:absolute;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: rgb(47, 165, 177);
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.tab-gallery .close:hover{
+  background-color: rgb(47, 165, 177);
+  color: white;
+  opacity: 80%;
+}
+
 
 /* Styling social media icons
 */
-
 .fa {
   margin: 0.5rem;
   text-decoration: none;

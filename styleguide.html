@@ -269,38 +269,42 @@
       <div class="modular-gallery">
         <div class="row">
           <div class="col">
-            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img class="img-overlay" src="img/akdoc-icon.png" onclick="openSlides();currentSlide(1)"
+              class="hover-shadow">
           </div>
           <div class="col">
-            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img class="img-overlay" src="img/astesia-icon.png" onclick="openSlides();currentSlide(2)"
+              class="hover-shadow">
           </div>
           <div class="col">
-            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img class="img-overlay" src="img/haruka-icon.png" onclick="openSlides();currentSlide(3)"
+              class="hover-shadow">
           </div>
           <div class="col">
-            <img src="https://via.placeholder.com/250x250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img class="img-overlay" src="img/myrtle-icon.png" onclick="openSlides();currentSlide(4)"
+              class="hover-shadow">
           </div>
         </div>
 
         <!-- The Modal/Lightbox -->
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div id="modalgallery" class="modal">
+          <span class="close cursor" onclick="closeSlides()">&times;</span>
           <div class="modal-content">
 
             <div class="slides">
-              <img src="https://via.placeholder.com/250x250" alt="about me image">
+              <img src="img/akdoc.png" alt="about me image">
             </div>
 
             <div class="slides">
-              <img src="https://via.placeholder.com/250x250" alt="about me image">
+              <img src="img/astesia.png" alt="about me image">
             </div>
 
             <div class="slides">
-              <img src="https://via.placeholder.com/250x250" alt="about me image">
+              <img src="img/haruka.png" alt="about me image">
             </div>
 
             <div class="slides">
-              <img src="https://via.placeholder.com/250x250" alt="about me image">
+              <img src="img/myrtle.png" alt="about me image">
             </div>
 
             <!-- Caption text -->
@@ -310,21 +314,45 @@
 
             <!-- Thumbnail image controls -->
             <div class="col">
-              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(1)" alt="Nature">
+              <img class="slidethumb" src="img/akdoc-thumb.png" onclick="currentSlide(1)"
+                alt="Drawing of my original character and two characters from the game Arknights to commemorate Arknights Global 1st anniversary (Dec 2020)">
             </div>
 
             <div class="col">
-              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(2)" alt="Nature2">
+              <img class="slidethumb" src="img/astesia-thumb.png" onclick="currentSlide(2)"
+                alt="Fanart of Astesia from Arknights (May 2020)">
             </div>
 
             <div class="col">
-              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(3)" alt="Nature3">
+              <img class="slidethumb" src="img/haruka-thumb.png" onclick="currentSlide(3)"
+                alt="Original Character (Mar 2020)">
             </div>
 
             <div class="col">
-              <img class="demo" src="https://via.placeholder.com/200x200" onclick="currentSlide(4)" alt="Nature4">
+              <img class="slidethumb" src="img/myrtle-thumb.png" onclick="currentSlide(4)"
+                alt="Fanart of Myrtle from Arknights (June 2020)">
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Projects Gallery [Clickable Tab Gallery]</h3>
+      <div class="tab-gallery">
+        <div class="row">
+          <div class="col">
+            <img src="https://via.placeholder.com/300x300" alt="Nature" onclick="myFunction(this);">
+          </div>
+          <div class="col">
+            <img src="https://via.placeholder.com/300x300" alt="Snow" onclick="myFunction(this);">
+          </div>
+        </div>
+
+        <div class="expand">
+          <span onclick="this.parentElement.style.display='none'" class="close">&times;</span>
+          <img id="fullSizeImage">
+          <div id="imgtext"></div>
         </div>
       </div>
 
@@ -379,6 +407,7 @@
 
     <!--JAVASCRIPT-->
     <script src="scripts/gallery.js"></script>
+    <script src="scripts/tab-gallery.js"></script>
 
 </body>
 
