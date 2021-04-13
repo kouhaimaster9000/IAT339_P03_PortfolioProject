@@ -452,11 +452,24 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-top: 1rem;
 }
 
+.project-info a{
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(10, 47, 81);
+}
+
+.project-info a:hover{
+  text-decoration: underline;
+  color: rgb(47, 165, 177);
+}
+
 .project-info .center-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 75%;
 }
 
 .project-info .text{
