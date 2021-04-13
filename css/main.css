@@ -332,16 +332,16 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   font-size: 0.8rem;
 }
 
+.info{
+  display: flex;
+}
+
 /*Contact form*/
 
 .contact {
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
-}
-
-.contact .info {
-  display: flex;
 }
 
 .contact .left-side {
@@ -390,12 +390,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-right: 1rem;
 }
 
-.about .info {
-  margin-right: 5rem;
-  margin-left: 5rem;
-  display: flex;
-}
-
 .about .left-side {
   margin-right: 2rem;
   flex: 10 1 40%;
@@ -432,10 +426,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   text-decoration: underline;
   font-weight: bold;
   cursor: pointer;
-}
-
-.project .info {
-  display: flex;
 }
 
 .project .left-side {
@@ -605,18 +595,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  .about .info {
-    flex-direction: column;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-  .contact .info {
-    flex-direction: column;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  .project .info {
+  .info {
     flex-direction: column;
     margin-right: 1rem;
     margin-left: 1rem;
