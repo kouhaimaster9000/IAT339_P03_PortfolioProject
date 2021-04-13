@@ -550,6 +550,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 .tab-gallery{
   margin-top: 1rem;
+  text-align: center;
 }
 
 .tab-gallery .col {
@@ -577,9 +578,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 }
 
 .tab-gallery #imgtext {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  text-align: center;
   font-weight: bold;
   color: rgb(10, 47, 81);
 }

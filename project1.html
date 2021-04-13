@@ -40,8 +40,28 @@
     <h2 class="title">Visual Novel Project</h2>
     <h3 class="subtitle">A Sight Never Seen</h3>
     <img class="center-img" src="https://via.placeholder.com/700x300" alt="placeholder">
-    <p class ="text">For IAT313: Narrative and New Media, we were tasked with creating an interactive story that has more than one linear plotline and multiple endings. We had to create this project in a group of four, and develop and establish a narrative that the player could control with the choices given to them like a ‘choose your adventure’ story. The approach to the project was flexible. However the main outcome was to create a non-linear story. 
+    <p class="text">
+      For IAT313: Narrative and New Media, we were tasked with creating an interactive story that has more than one
+      linear plotline and multiple endings. We had to create this project in a group of four, and develop and establish
+      a narrative that the player could control with the choices given to them like a ‘choose your adventure’ story. The
+      approach to the project was flexible. However the main outcome was to create a non-linear story.
     </p>
+    <div class="tab-gallery">
+      <div class="row">
+        <div class="col">
+          <img src="https://via.placeholder.com/300x300" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/300x300" alt="Snow" onclick="myFunction(this);">
+        </div>
+      </div>
+
+      <div class="expand">
+        <span onclick="this.parentElement.style.display='none'" class="close">&times;</span>
+        <img id="fullSizeImage">
+        <div id="imgtext"></div>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
@@ -51,4 +71,7 @@
       <a href=" citations.html">Citations</a>
     </div>
   </footer>
+
+  <!--JAVASCRIPT-->
+  <script src="scripts/tab-gallery.js"></script>
 </body>
