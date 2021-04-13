@@ -343,10 +343,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-left: 7rem;
-  padding-right: 7rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .index #header-img{
@@ -364,6 +360,20 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 .index .text{
   color: rgb(0, 85, 122);
+}
+
+.index-gallery{
+  margin-top: 2rem;
+}
+
+.index-gallery .left-side {
+  flex: 10 1 50%;
+  text-align: center;
+}
+
+.index-gallery .right-side {
+  flex: 10 1 50%;
+  text-align: center;
 }
 
 
@@ -662,6 +672,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
     margin: 0;
     width: 100%;
     border-top: none;
+    margin-bottom: 2rem;
   }
   .navbar label {
     display: inline-block;
@@ -716,5 +727,17 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   .tab-gallery .col {
     display: inline-block;
     width: 30%;
+  }
+  .index{
+    margin: 0;
+  }
+  .index #name{
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: rgb(10, 47, 81);
+  }
+  .index h2{
+    font-size: 1em;
   }
 }
