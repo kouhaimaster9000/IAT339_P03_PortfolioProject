@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -271,20 +271,20 @@
       <div class="modular-gallery">
         <div class="row">
           <div class="col">
-            <img class="img-overlay" src="img/akdoc-icon.png" onclick="openSlides();currentSlide(1)"
-              class="hover-shadow">
+            <img class="img-overlay hover-shadow" src="img/akdoc-icon.png" alt="icon for illustrations in gallery"
+              onclick="openSlides();currentSlide(1)">
           </div>
           <div class="col">
-            <img class="img-overlay" src="img/astesia-icon.png" onclick="openSlides();currentSlide(2)"
-              class="hover-shadow">
+            <img class="img-overlay hover-shadow" src="img/astesia-icon.png" alt="icon for illustrations in gallery"
+              onclick="openSlides();currentSlide(2)">
           </div>
           <div class="col">
-            <img class="img-overlay" src="img/haruka-icon.png" onclick="openSlides();currentSlide(3)"
-              class="hover-shadow">
+            <img class="img-overlay hover-shadow" src="img/haruka-icon.png" alt="icon for illustrations in gallery"
+              onclick="openSlides();currentSlide(3)">
           </div>
           <div class="col">
-            <img class="img-overlay" src="img/myrtle-icon.png" onclick="openSlides();currentSlide(4)"
-              class="hover-shadow">
+            <img class="img-overlay hover-shadow" src="img/myrtle-icon.png" alt="icon for illustrations in gallery"
+              onclick="openSlides();currentSlide(4)">
           </div>
         </div>
 
@@ -344,20 +344,32 @@
       <div class="tab-gallery">
         <div class="row">
           <div class="col">
-            <img src="https://via.placeholder.com/300x300" alt="Nature" onclick="myFunction(this);">
+            <img src="img/313-process1.png" alt="Part 1: Rough Sketch" onclick="myFunction(this);">
           </div>
           <div class="col">
-            <img src="https://via.placeholder.com/300x300" alt="Snow" onclick="myFunction(this);">
+            <img src="img/313-process2.png" alt="Part 2: Clean Line Art" onclick="myFunction(this);">
+          </div>
+          <div class="col">
+            <img src="img/313-process3.png" alt="Part 3: Blocking in Base Colour" onclick="myFunction(this);">
+          </div>
+          <div class="col">
+            <img src="img/313-process4.png" alt="Part 4: Colouring of Head" onclick="myFunction(this);">
+          </div>
+          <div class="col">
+            <img src="img/313-process5.png" alt="Part 5: Colouring of Clothes" onclick="myFunction(this);">
+          </div>
+          <div class="col">
+            <img src="img/313-process6.png" alt="Part 6: Adding in Background and Light Source"
+              onclick="myFunction(this);">
           </div>
         </div>
 
         <div class="expand">
           <span onclick="this.parentElement.style.display='none'" class="close">&times;</span>
-          <img id="fullSizeImage">
+          <img id="fullSizeImage" src="data:," alt="used to display image in full size">
           <div id="imgtext"></div>
         </div>
       </div>
-
     </section>
 
   </section>
@@ -406,10 +418,11 @@
           href="https://docs.google.com/document/d/1HmgYXReQoHfDQqZmPgneMOQYDWpZVJ7mN5O0c4ktGB8/edit?usp=sharing">here</a>
       </p>
     </section>
+  </section>
 
-    <!--JAVASCRIPT-->
-    <script src="scripts/gallery.js"></script>
-    <script src="scripts/tab-gallery.js"></script>
+  <!--JAVASCRIPT-->
+  <script src="scripts/gallery.js"></script>
+  <script src="scripts/tab-gallery.js"></script>
 
 </body>
 
