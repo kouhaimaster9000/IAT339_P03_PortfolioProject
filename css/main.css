@@ -255,7 +255,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 
 .bullet {
   list-style-type: '✦';
-  padding-inline-start: 1ch;
+  padding-left: 0.5rem;
 }
 
 /* 
@@ -333,7 +333,7 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
   margin-top: 2rem;
 }
 
-.index .header-container{
+.index .container{
   position: relative;
   text-align: center;
 }
@@ -348,7 +348,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .index #header-img{
   opacity: 70%;
   filter: blur(1px);
-  -webkit-filter: blur(1px);
 }
 
 .index #name{
@@ -361,21 +360,6 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .index .text{
   color: rgb(0, 85, 122);
 }
-
-.index-gallery{
-  margin-top: 2rem;
-}
-
-.index-gallery .left-side {
-  flex: 10 1 50%;
-  text-align: center;
-}
-
-.index-gallery .right-side {
-  flex: 10 1 50%;
-  text-align: center;
-}
-
 
 /*Contact form*/
 
