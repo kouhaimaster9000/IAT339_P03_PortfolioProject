@@ -216,12 +216,12 @@ h2 {
 }
 
 h3 {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
 h4 {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*************************************
@@ -374,13 +374,15 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .contact .left-side {
   flex: 10 1 50%;
   text-align: center;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .contact .right-side {
   float: right;
   flex: 10 1 50%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .contact h2, .contact p {
@@ -419,11 +421,15 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .about .left-side {
   flex: 10 1 40%;
   text-align: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .about .right-side {
   float: right;
   flex: 10 1 55%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .socials {
@@ -456,11 +462,15 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .project .left-side {
   flex: 10 1 50%;
   text-align: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .project .right-side {
   flex: 10 1 50%;
   text-align: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 /*For individual project pages*/
@@ -498,11 +508,15 @@ https://blog.prototypr.io/create-beautiful-numbered-lists-with-css-counters-726e
 .project-info .left-side {
   flex: 10 1 50%;
   text-align: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .project-info .right-side {
   flex: 10 1 50%;
   text-align: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .personal {
